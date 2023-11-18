@@ -1,0 +1,8 @@
+{
+  "name": "Hoovern't",
+  "version_number": "1.0.0",
+  "author": "Mayo.jar",
+  "description": "You decide if you want to vacuum or not.",
+  "website_url": "",
+  "dependencies": [ "denikson-BepInExPack_Valheim-5.4.2202" ]
+}
