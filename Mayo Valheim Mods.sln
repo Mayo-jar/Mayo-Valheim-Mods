@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoovernt", "Hoovernt.csproj", "{91482D55-3928-4FAF-8804-B9DF96FBF821}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAV", "..\AAV\AAV.csproj", "{7419A03A-6330-44AE-94F4-8C1987B7AA20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{91482D55-3928-4FAF-8804-B9DF96FBF821}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91482D55-3928-4FAF-8804-B9DF96FBF821}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91482D55-3928-4FAF-8804-B9DF96FBF821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
