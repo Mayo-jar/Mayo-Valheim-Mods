@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoovernt", "Hoovernt\Hoover
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAV", "AAV\AAV.csproj", "{7419A03A-6330-44AE-94F4-8C1987B7AA20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorDoor", "MorDoor\MorDoor.csproj", "{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7419A03A-6330-44AE-94F4-8C1987B7AA20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

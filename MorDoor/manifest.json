@@ -1,0 +1,8 @@
+{
+  "name": "MorDoor",
+  "version_number": "1.0.0",
+  "author": "Mayo-jar",
+  "description": "You can now simply walk through 'more doors'",
+  "website_url": "",
+  "dependencies": [ "denikson-BepInExPack_Valheim-5.4.2202" ]
+}
