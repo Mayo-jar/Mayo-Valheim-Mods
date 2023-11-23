@@ -1,8 +1,8 @@
 {
   "name": "Hoovernt",
-  "version_number": "1.0.0",
+  "version_number": "1.1.0",
   "author": "Mayo-jar",
   "description": "You decide if you want to vacuum or not.",
-  "website_url": "",
+  "website_url": "https://github.com/Mayo-jar/Mayo-Valheim-Mods/tree/main/Hoovernt",
   "dependencies": [ "denikson-BepInExPack_Valheim-5.4.2202" ]
 }
