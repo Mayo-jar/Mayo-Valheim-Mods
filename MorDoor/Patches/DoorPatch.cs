@@ -1,39 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using HarmonyLib;
+using static MorDoor.PluginConfig;
 
 using UnityEngine;
 
 using static MorDoor.MorDoor;
+using static MeleeWeaponTrail;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MorDoor.Patches {
 
     [HarmonyPatch(typeof(Door))]
     internal class DoorPatch {
 
-        [HarmonyPostfix]
+        [HarmonyPrefix]
         [HarmonyPatch(nameof(Door.Interact))]
-        static void InteractPostfix(Humanoid character, bool hold, bool alt, Door __instance) {
+        static void InteractPrefix(Humanoid character, bool hold, bool alt, Door __instance) {
 
-            if (!PlayerInitiated) {
+            if (!IsModEnabled.Value || !PlayerInitiated) {  return; }
 
-                return;
-            }
             GetDoors(character);
             PlayerInitiated = false;
             foreach (Piece piece in Doors) {
 
-                Vector3 origin = __instance.transform.position;
-                Vector3 target = piece.transform.position;
-                if (Vector3.Distance(origin, target) <= 3f && origin != target && origin.y == target.y
-                    && Math.Abs(Math.Abs(Vector3.SignedAngle(origin - target, __instance.transform.forward, Vector3.up))-90) <= 0.1f
-                    && piece.m_nview.gameObject.TryGetComponent(out Door door)
-                    && Math.Abs(Quaternion.Angle(__instance.transform.rotation, door.transform.rotation) - 180f) <= 0.5f) {
-
-                    door.Interact(character, hold, alt);
+                if (piece.m_nview.gameObject.TryGetComponent(out Door door) && DoubleDoorCheck(__instance,door)){
+                    
+                    door.Interact(character, hold, alt);                  
                 }
             }
-            Doors = new List<Piece>();
+            Doors.Clear();
             PlayerInitiated = true;
         }
     }

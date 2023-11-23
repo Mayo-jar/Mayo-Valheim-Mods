@@ -16,6 +16,10 @@
 
 ## Changelog
 
+## 1.1.0
+
+  * Added Config enabler/disabler along with a bugfix for doors in different states
+
 ## 1.0.0
 
   * Initial release.
