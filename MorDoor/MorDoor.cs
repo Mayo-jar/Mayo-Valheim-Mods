@@ -16,7 +16,7 @@ namespace MorDoor
     {
         public const string PluginGuid = "mayo.is.an.instrument.MorDoor";
         public const string PluginName = "MorDoor";
-        public const string PluginVersion = "1.1.0";
+        public const string PluginVersion = "2.0.0";
         public static List<Piece> Doors = new List<Piece>();
         public static List<Piece> Pieces = new List<Piece>();
         public static bool PlayerInitiated = true;
@@ -40,11 +40,7 @@ namespace MorDoor
             Piece.GetAllPiecesInRadius(character.transform.position, 10f, Pieces);
             foreach(Piece piece in Pieces) {
 
-                if (piece.m_name == "$piece_wooddoor"
-                    || piece.m_name == "$piece_woodgate"
-                    || piece.m_name == "$piece_irongate"
-                    || piece.m_name == "$piece_woodwindowshutter"
-                    || piece.m_name == "$piece_darkwoodgate") {
+                if (piece.m_nview.gameObject.TryGetComponent(out Door door)) {
 
                     Doors.Add(piece);
                 }
@@ -54,7 +50,7 @@ namespace MorDoor
         
         public static bool DoubleDoorCheck(Door point, Door next) {
 
-            if (Vector3.Distance(point.transform.position, next.transform.position) <= 3f   
+            if (Vector3.Distance(point.transform.position, next.transform.position) <= 5f   
                 && point.transform.position != next.transform.position         
                 && point.transform.position.y == next.transform.position.y  
                 && Math.Abs(Math.Abs(Vector3.SignedAngle(point.transform.position - next.transform.position, point.transform.forward, Vector3.up)) - 90) <= 0.1f

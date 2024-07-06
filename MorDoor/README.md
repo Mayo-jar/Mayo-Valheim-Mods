@@ -15,6 +15,10 @@
   * Click "OK/Import local mod" on the pop-up for information.
 
 ## Changelog
+## 2.0.0
+
+  * Changed the main logic for checking the status of doors, now ANY object with a door component will function as long as it is the same relative width as a normal door or gate
+  * there are now MORE DOORS in MorDoor!... I'll see myself out
 
 ## 1.1.0
 
