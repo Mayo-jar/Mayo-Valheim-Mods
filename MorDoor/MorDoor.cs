@@ -16,9 +16,8 @@ namespace MorDoor
     {
         public const string PluginGuid = "mayo.is.an.instrument.MorDoor";
         public const string PluginName = "MorDoor";
-        public const string PluginVersion = "2.0.0";
+        public const string PluginVersion = "2.1.0";
         public static List<Piece> Doors = new List<Piece>();
-        public static List<Piece> Pieces = new List<Piece>();
         public static bool PlayerInitiated = true;
 
         Harmony _harmony;
@@ -33,19 +32,6 @@ namespace MorDoor
         public void OnDestroy()
         {
             _harmony?.UnpatchSelf();
-        }
-
-        public static void GetDoors(Humanoid character) {
-
-            Piece.GetAllPiecesInRadius(character.transform.position, 10f, Pieces);
-            foreach(Piece piece in Pieces) {
-
-                if (piece.m_nview.gameObject.TryGetComponent(out Door door)) {
-
-                    Doors.Add(piece);
-                }
-            }
-            Pieces = new List<Piece>();
         }
         
         public static bool DoubleDoorCheck(Door point, Door next) {

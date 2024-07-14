@@ -11,10 +11,15 @@
 
 ### Thunderstore (manual install)
 
-  * Go to Settings > Import local mod > Select `MorDoor_v1.0.0.zip`.
+  * Go to Settings > Import local mod > Select `MorDoor_v2.1.0.zip`.
   * Click "OK/Import local mod" on the pop-up for information.
 
 ## Changelog
+## 2.1.0
+
+  * MorDoor will now claim ownership on all doors being opened (for multiplayer servers)
+  * Lag related bugfixes
+
 ## 2.0.0
 
   * Changed the main logic for checking the status of doors, now ANY object with a door component will function as long as it is the same relative width as a normal door or gate
