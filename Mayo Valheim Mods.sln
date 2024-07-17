@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAV", "AAV\AAV.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorDoor", "MorDoor\MorDoor.csproj", "{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WD40", "WD40\WD40.csproj", "{E420A4CA-00D8-479D-BC79-AE4A57E0CE45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED549BB4-DAB5-41AB-AEE5-B5EB66F4A045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E420A4CA-00D8-479D-BC79-AE4A57E0CE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E420A4CA-00D8-479D-BC79-AE4A57E0CE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E420A4CA-00D8-479D-BC79-AE4A57E0CE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E420A4CA-00D8-479D-BC79-AE4A57E0CE45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

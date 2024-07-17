@@ -1,0 +1,8 @@
+{
+  "name": "WD40",
+  "version_number": "1.0.0",
+  "author": "Mayo-jar",
+  "description": "Make things open faster",
+  "website_url": "https://github.com/Mayo-jar/Mayo-Valheim-Mods/tree/main",
+  "dependencies": [ "denikson-BepInExPack_Valheim-5.4.2202" ]
+}
